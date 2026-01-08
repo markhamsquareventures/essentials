@@ -1,0 +1,6 @@
+{
+  "php": {
+    "command": ["intelephense", "--stdio"],
+    "languages": ["php"]
+  }
+}

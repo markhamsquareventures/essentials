@@ -1,0 +1,24 @@
+{
+  "name": "essentials",
+  "description": "Essential skills, commands, and hooks for working with Laravel projects",
+  "version": "0.0.1",
+  "author": {
+    "name": "Nick Basile",
+    "email": "nick@markhamsq.com"
+  },
+  "homepage": "https://github.com/markhamsquareventures/essentials",
+  "repository": "https://github.com/markhamsquareventures/essentials",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/hooks/git_safety_guard.py"
+          }
+        ]
+      }
+    ]
+  }
+}
