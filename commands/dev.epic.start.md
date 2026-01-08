@@ -61,3 +61,5 @@ Start a new epic:
 4. Enter plan mode to design the implementation approach
 
 The PRD should capture scope, requirements, and success criteria before planning begins.
+
+Ask the user what their goal is and then interview them until you have enough context to create the PRD.

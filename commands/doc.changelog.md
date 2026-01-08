@@ -5,8 +5,8 @@ description: Create a changelog entry for a completed epic
 
 ## Context
 
-- Existing PRDs: !`ls docs/prds/*.md 2>/dev/null | grep -v changelog || echo "No PRDs found"`
-- Existing changelogs: !`ls docs/prds/*.changelog.md 2>/dev/null || echo "No changelogs yet"`
+- Existing PRDs: !`ls docs/prds/*.md 2>/dev/null || echo "No PRDs found"`
+- Existing changelogs: !`ls docs/changelog/*.md 2>/dev/null || echo "No changelogs yet"`
 - Current branch: !`git branch --show-current`
 - Recent commits on branch: !`git log main..HEAD --oneline 2>/dev/null || git log -10 --oneline`
 
@@ -30,7 +30,7 @@ Create a changelog documenting what was delivered for an epic.
 
 5. **Ask for the PR link** (use `gh pr list` to help find it if available)
 
-6. **Generate the changelog** at `docs/prds/{epic}.changelog.md`:
+6. **Generate the changelog** at `docs/changelog/{epic}.md`:
 
 ```
 # Changelog: {Epic Name}
